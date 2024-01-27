@@ -34,7 +34,7 @@ const crearUsuario = async (req = request, res = response) => {
             ok: true,
             uid: dbUsuario.id,
             name,
-            email: usuarioDB.email,
+            email: dbUsuario.email,
             token
         })
     } catch (error) {
